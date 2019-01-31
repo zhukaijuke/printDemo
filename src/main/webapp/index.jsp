@@ -34,13 +34,15 @@
             url: 'http://localhost:8086/',
             type: 'post',
             data: {
-                name: "xu",
-                foo: 'bar',
-                url: 'http://localhost/print/test2'
+                docType: "物流面单",
+                url: 'http://localhost/print/test2?a=我'
             },
             cache: false,
             success: function(res){
                 console.log(res);
+            },
+            error: function (res) {
+                console.log('error!!!');
             }
         });
     }
